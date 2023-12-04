@@ -1,0 +1,27 @@
+.sliding-boxes-container {
+    position: relative;
+    width: 300px; /* Asegúrate de que este ancho sea suficiente */
+    height: 300px; /* Altura fija para evitar destellos blancos */
+    overflow: hidden;
+  }
+  
+  .box {
+    position: absolute;
+    width: calc(100% - 4px); /* Resta el grosor del borde */
+    height: calc(100% - 4px); /* Resta el grosor del borde */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid; /* Solo bordes sin relleno */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-sizing: border-box; /* Incluye el borde en el cálculo del tamaño */
+    will-change: transform;
+    padding-bottom: 20px;
+  }
+  
+  .box-text {
+    color: rgb(179, 179, 179);
+    font-size: 20px;
+    text-align: center;
+  }
+  
